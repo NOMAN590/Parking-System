@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Parking System</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Smart Parking Management</h1>
+
+    <!-- ADD VEHICLE -->
+    <form id="vehicleForm">
+
+        <input type="text" id="owner_name" placeholder="Owner Name" required>
+
+        <input type="text" id="vehicle_number" placeholder="Vehicle Number" required>
+
+        <select id="vehicle_type">
+            <option>Car</option>
+            <option>Motorcycle</option>
+            <option>Truck</option>
+            <option>EV</option>
+        </select>
+
+        <button type="submit">Add Vehicle</button>
+
+    </form>
+
+    <div id="message"></div>
+
+    <hr style="margin:30px 0;">
+
+    <!-- EXIT VEHICLE -->
+    <h2 class="exit-title">Vehicle Exit</h2>
+
+    <form id="exitForm">
+
+        <input type="number" id="record_id" placeholder="Enter Record ID" required>
+
+        <button type="submit">Exit Vehicle</button>
+
+    </form>
+
+    <div id="exitMessage"></div>
+
+</div>
+
+<script src="/script.js"></script>
+
+</body>
+</html>
